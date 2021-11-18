@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
 
-df_raw = pd.read_csv('https://raw.githubusercontent.com/minhealthnz/nz-covid-data/main/vaccine-data/sa2-data/uptake_sa2_dhb_latest.csv')
+df_raw = pd.read_csv('https://raw.githubusercontent.com/minhealthnz/nz-covid-data/main/vaccine-data/sa2-data/uptake_sa2_dhb_latest.csv',
+                     dtype=str)
 
 df = df_raw.copy()
 
